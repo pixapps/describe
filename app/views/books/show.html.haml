@@ -1,0 +1,5 @@
+%h1= @book.name
+%p= @book.description
+
+%p= link_to "Edit Book", edit_book_path(@book)
+%p= link_to "Delete Book", @book, method: :delete, data: { confirm: "Are you sure?" }
