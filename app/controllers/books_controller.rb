@@ -28,11 +28,11 @@ class BooksController < ApplicationController
 	private
 
 	def book_params
-
+		params.require(:book).permit(:name, :description)
 	end
 
 	def set_book
-
+		@book = Book.find(params[:id])
 	end
 
 end

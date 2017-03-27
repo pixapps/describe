@@ -1,5 +1,7 @@
 %h1 All books
 
+%p= link_to "Create new book", new_book_path
+
 %ul
 	- @books.each do |book|
 		%li= book.name
