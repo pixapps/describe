@@ -28,6 +28,4 @@ describe "book creation" do
 		expect(page).to have_text "Create new book"
 		expect(Book.count).to eq(0)
 	end
-
-
 end

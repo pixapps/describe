@@ -1,7 +1,4 @@
 describe "book edit" do
-
-	# let!(:book) { create(:book) }
-
 	def edit_book(options={})
 		book = create(:book)
 
@@ -34,6 +31,4 @@ describe "book edit" do
 
 		expect(page).to have_text "Book could not be updated."
 	end
-
-
 end

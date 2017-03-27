@@ -1,5 +1,4 @@
 describe "book destroy" do
-
 	it "is successful when clicking delete button" do
 		book = create(:book)
 
@@ -14,8 +13,4 @@ describe "book destroy" do
 		expect(page).to_not have_content book.name
 		expect(Book.count).to eq(0)
 	end
-
-	
-
-
 end
