@@ -1,0 +1,6 @@
+%h1 All books
+
+%ul
+	- @books.each do |book|
+		%li= book.name
+		%li= book.description
