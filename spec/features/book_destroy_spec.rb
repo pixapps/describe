@@ -1,7 +1,5 @@
 describe "book destroy" do
 
-	# let!(:book) { create(:book) }
-
 	it "is successful when clicking delete button" do
 		book = create(:book)
 
