@@ -20,7 +20,8 @@ class BooksController < ApplicationController
 		if @book.save
 			redirect_to book_path(@book), notice: "You have created a new book."
 		else
-			redirect_to :back, notice: "Book could not be created."
+			redirect_back(fallback_location: root_path)
+			flash[:error] = "Book could not be created."
 		end
 
 	end
