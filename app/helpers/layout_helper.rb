@@ -1,5 +1,4 @@
 module LayoutHelper
-
   def flash_messages(opts={})
 
     @layout_flash = opts.fetch(:layout_flash) { true }
@@ -14,6 +13,4 @@ module LayoutHelper
   def show_layout_flash?
     @layout_flash.nil? ? true : @layout_flash
   end
-
-
 end
