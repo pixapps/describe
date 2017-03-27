@@ -1,5 +1,4 @@
 class BooksController < ApplicationController
-
 	before_action :set_book, only: [:show, :edit, :update, :destroy]
 
 
@@ -57,5 +56,4 @@ class BooksController < ApplicationController
 	def set_book
 		@book = Book.find(params[:id])
 	end
-
 end
