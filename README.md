@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a repository for the Describe application which is an online community for users to create new content, readers to read and review content, and for publishers to new and interesting content to be published.
 
-Things you may want to cover:
+The platform hopes to give an opportunity to budding authors to publish excerpts of their content, be they novels, poetry or short stories and get feedback and tips on improvement.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The application has been built using the Ruby on Rails framework.
