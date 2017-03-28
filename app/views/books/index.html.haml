@@ -5,5 +5,6 @@
 - if @books.any?
 	%ul
 		- @books.each do |book|
-			%li= link_to book.name, book
-			%li= book.description
+			%li
+				%h3= link_to book.name, book
+				%p= book.description
