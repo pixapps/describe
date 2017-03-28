@@ -2,7 +2,8 @@
 
 %p= link_to "Create new book", new_book_path
 
-%ul
-	- @books.each do |book|
-		%li= link_to book.name, book
-		%li= book.description
+- if @books.any?
+	%ul
+		- @books.each do |book|
+			%li= link_to book.name, book
+			%li= book.description
