@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.0.2'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -18,7 +17,13 @@ gem 'haml'
 gem 'simple_form'
 gem 'bootstrap-sass'
 
+
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'database_cleaner'
